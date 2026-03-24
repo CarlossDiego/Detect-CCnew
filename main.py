@@ -4,7 +4,7 @@ import time
 import paho.mqtt.client as mqtt
 from datetime import datetime
 
-# Configuração MQTT com a versão 2 da API
+# Configuração MQTT com a versão 2 ,  da API
 client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2)
 client.connect("broker.hivemq.com", 1883, 60)
 client.loop_start() # Mantém a conexão ativa em segundo plano
